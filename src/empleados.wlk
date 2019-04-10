@@ -4,6 +4,11 @@ object galvan {
 //	var property sueldo = 15000
 // atributo : se usa get y set o usar la linea anterior
 // siempre inicializar contadores o acumuladores
+//cantidad de parametros = aridad
+
+//expresiones
+//-matematica 8+4
+//-booleana 8>11       8>11 ||  7<11    -> verdadero
 	var sueldo = 15000
 	var deuda = 0
 	method sueldo() { return sueldo }
@@ -11,6 +16,7 @@ object galvan {
 	method cobrarSueldo(){
 		sueldo += 15000
 		sueldo -= deuda
+		deuda = 0
 	}
 	method gastar(cuanto) {deuda = cuanto}
 	method totalDeuda() {
